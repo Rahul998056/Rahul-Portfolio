@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  animation: blur-anim 2s linear 1;
+}
+html {
+  overflow: hidden;
+  background-color: #dffeda;
+}
+/* Profile */
+.container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+ 
+  /* background-color: black; */
+
+.imageContainer {
+  background-color: rgb(0, 0, 0);
+  width: 100px;
+  height: 100px;
+  border-radius: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  top: 40px;
+  border: 2.5px solid black;
+  border-radius: 500px;
+  background-color: aqua;
+  /* background-image: url('WhatsApp\ Image\ 2023-05-12\ at\ 22.58.44.jpeg'); */
+  height: 7em;
+
+  /* position: relative;
+      top:100px;
+      left: 100px; */
+  width: 7em;
+  padding: 9px;
+  z-index: 1;
+}
+.imageContainer img {
+  position: relative;
+  top: -1.0em;
+  left: -1.3em;
+  height: 10em;
+}
+/* Text Container */
+.containerText {
+  display: grid;
+  justify-content: center;
+}
+.intro {
+  /* Description */
+  position: relative;
+  top: -5px;
+  height: auto;
+}
+.user {
+  position: relative;
+  top: 16px;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: center;
+}
+/* Button */
+.containerButton {
+  display: grid;
+  position: relative;
+  left: 40em;
+  top: 0em;
+  justify-content: center;
+  width: 15em;
+}
+.button {
+  width: 15em;
+  height: 26px;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 25px;
+  box-shadow: 4px 5px black;
+  margin: 0.5em;
+  background-color: #bbffe4;
+  border: 2px solid black;
+}
+.button a {
+  position: relative;
+  top: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.button img {
+  position: relative;
+  left: -70px;
+  height: 20px;
+}
+/* Share button Container */
+.shareButtonContainer {
+  position: relative;
+  display: inline;
+  left: 93%;
+  width: 30px;
+  height: 30px;
+  /* background-color: black; */
+}
+.shareButton {
+  position: relative;
+  display: inline;
+  top: 35%;
+  box-shadow: 3px 4px black;
+  border: 2px solid black;
+  width: 60px;
+  height: 60px;
+  border-radius: 500px;
+  background-color: #bbffe4;
+}
+.shareButton img {
+  height: 25px;
+}
+/* Main Page Ended */
+
+/* Animation For Circle */
+@keyframes circle-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* For Small Laptop */
+@media screen and (max-width:880px) {
+  .containerButton{
+    position: relative;
+  }
+  .button{
+    background-color: #BBFEE3;
+    position: relative;
+    left:-21em;
+  }
+}
+/* Media Querry For Phone */
+@media screen and (max-width: 412px) {
+  html {
+    background-color: #dffeda;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+  }
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+    top: 40px;
+    border-radius: 500px;
+    background-color: aqua;
+    /* background-image: url('WhatsApp\ Image\ 2023-05-12\ at\ 22.58.44.jpeg'); */
+    height: 7em;
+
+    /* position: relative;
+        top:100px;
+        left: 100px; */
+    width: 7em;
+    padding: 9px;
+    z-index: 1;
+  }
+  .animate {
+    position: relative;
+    z-index: -1;
+    top: -7em;
+    left: 8em;
+    width: 8.8em;
+    height: 8.8em;
+    border-radius: 500px;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(29, 103, 251),
+      #00fff7
+    );
+    animation: circle-rotate 5s linear infinite;
+  }
+  .imageContainer img {
+    position: relative;
+    top: -3.2em;
+    left: -0.6em;
+    height: 12em;
+  }
+  .containerText {
+    display: grid;
+    justify-content: center;
+  }
+  .intro {
+    position: relative;
+    top: -130px;
+    height: auto;
+  }
+  .user {
+    position: relative;
+    top: -110px;
+    font-size: 19px;
+    text-align: center;
+  }
+  .containerButton {
+    display: grid;
+    position: relative;
+    left: 25em;
+    top: -9em;
+    justify-content: center;
+    width: 15em;
+  }
+  .button {
+    width: 15em;
+    height: 26px;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 25px;
+    box-shadow: 4px 5px black;
+    margin: 0.5em;
+    background-color: #bbffe4;
+    border: 2px solid black;
+  }
+  .button a {
+    position: relative;
+    top: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+  .button img {
+    position: relative;
+    left: -70px;
+    height: 20px;
+  }
+  /* Share button Container */
+  .shareButtonContainer {
+    position: relative;
+    display: inline;
+    left: 78%;
+    width: 30px;
+    height: 30px;
+    /* background-color: black; */
+  }
+  .shareButton {
+    position: relative;
+    display: inline;
+    top: 35%;
+    box-shadow: 3px 4px black;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+    border-radius: 500px;
+    background-color: #bbffe4;
+  }
+  .shareButton img {
+    height: 25px;
+  }
+}
+@media screen and (max-width: 408px) {
+  .animate {
+    left: 6.9em;
+  }
+}
+@media screen and (max-width: 362px) {
+  .animate {
+    position: relative;
+    z-index: -1;
+    top: -7.1em;
+    left: 6.3em;
+    width: 8.6em;
+    height: 8.6em;
+    border-radius: 500px;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(29, 103, 251),
+      #00fff7
+    );
+    animation: circle-rotate 5s linear infinite;
+  }
+}
+
+@media screen and (max-width: 357px) {
+  .animate {
+    position: relative;
+    z-index: -1;
+    top: -7.1em;
+    left: 5.9em;
+    width: 8.8em;
+    height: 8.8em;
+  }
+}
+
+/* Blur */
+@keyframes blur-anim {
+  0%{
+    background-color: #dffeda;
+    filter: blur(80px);
+  }
+	100% {
+    background-color: #dffeda31;
+    filter: blur(0px) };
+}
